@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include diknas *.css
+recursive-include diknas *.csv
+recursive-include diknas *.html
+recursive-include diknas *.ico
+recursive-include diknas *.js
+recursive-include diknas *.json
+recursive-include diknas *.md
+recursive-include diknas *.png
+recursive-include diknas *.py
+recursive-include diknas *.svg
+recursive-include diknas *.txt
+recursive-exclude diknas *.pyc
