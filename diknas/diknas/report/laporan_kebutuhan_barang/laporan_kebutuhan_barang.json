@@ -1,0 +1,24 @@
+{
+ "add_total_row": 0, 
+ "apply_user_permissions": 1, 
+ "creation": "2018-06-19 11:24:53.890121", 
+ "disabled": 0, 
+ "docstatus": 0, 
+ "doctype": "Report", 
+ "idx": 0, 
+ "is_standard": "Yes", 
+ "modified": "2018-06-19 11:33:39.474276", 
+ "modified_by": "Administrator", 
+ "module": "Diknas", 
+ "name": "Laporan Kebutuhan Barang", 
+ "owner": "Administrator", 
+ "query": "select d.parent as \"Nama Sekolah:Link/Sekolah:200\",d.jenis_barang as \"Jenis Barang:Data:200\",d.qty as \"Kebutuhan Stok:Int:100\" , ifnull(s.qty,0) as \"Current Stok:Int:100\" , d.qty-ifnull(s.qty,0) as \"Kekurangan:Int:100\" from `tabTabel Kebutuhan` d  left join `tabKartu Stok` s on s.sekolah = d.parent and s.jenis_barang=d.jenis_barang", 
+ "ref_doctype": "Sekolah", 
+ "report_name": "Laporan Kebutuhan Barang", 
+ "report_type": "Query Report", 
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}
